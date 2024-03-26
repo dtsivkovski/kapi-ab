@@ -1,9 +1,8 @@
 
 body {
-    background-image: url('https://images.unsplash.com/photo-1636652968964-22026624a69a?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1636652968964-22026624a69a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     min-height: 100vh;
 }
@@ -18,6 +17,16 @@ span.title {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 .navbar-item, .navbar-dropdown, .navbar-link {
+    color: white;
+}
+.is-blurred-light {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.275);
+    color: white;
+}
+.is-blurred-dark {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
 .navbar-dropdown {
@@ -41,4 +50,22 @@ span.title {
 }
 .navbar-menu.is-active {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.central-hero {
+    margin-top: 4em;
+    border-radius: 1em;
+    transition: background-color 3s ease, border-radius 3s ease, backdrop-filter 3s ease;
+}
+/* Media for central hero, eliminate top margin if too small of a screen */
+@media screen and (max-width: 768px) {
+    .central-hero {
+        margin-top: 0;
+        border-radius: 0em;
+        min-height: 100vh;
+    }
+}
+
+.navbar-burger span {
+    background-color: white;
 }

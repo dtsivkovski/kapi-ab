@@ -3,14 +3,18 @@
 <head>
     <title>ΚΑΠ - ΑΒ</title>
     <link rel="icon" href="assets/favicon.ico" type="image/icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
     >
     <link rel="stylesheet" href="assets/css/navbarsupp.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <!-- Navbar element with bulma -->
+    <div class="navholder">
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
@@ -28,15 +32,19 @@
       
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item">
-              Home
+            <a class="navbar-item" href="main/resources.html">
+              Resources
             </a>
       
-            <a class="navbar-item">
-              Documentation
+            <a class="navbar-item" href="main/minutes.html">
+              Minutes
+            </a>
+
+            <a class="navbar-item" href="main/agenda.html">
+              Agenda
             </a>
       
-            <div class="navbar-item has-dropdown is-hoverable">
+            <!-- <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
                 More
               </a>
@@ -47,10 +55,11 @@
                 </a>
               </div>
             </div>
+            -->
           </div>
       
           <div class="navbar-end">
-            <div class="navbar-item nav-no-hover">
+            <!-- <div class="navbar-item nav-no-hover">
               <div class="buttons">
                 <a class="button is-primary">
                   <strong>Sign up</strong>
@@ -59,13 +68,28 @@
                   Log in
                 </a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </nav>
+    </div>
       <script src="assets/js/navbarsupp.js"></script>
-    <div class="container is-flex ">
-        <h1 class="title">Welcome to the KAPi Alpha Beta Hub!</h1>
+    <div class="container is-flex is-justify-content-center is-align-items-center">
+        <div class="hero is-blurred-light central-hero is-size-1-mobile is-hero-hover">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title has-text-white has-text-centered font-georgia">Welcome to the ΚΑΠ Alpha Beta Hub!</h1>
+                </div>
+                <div class="columns mt-4">
+                  <div class="column is-flex is-justify-content-center is-align-items-center">
+                    <a class="button button-blurred w100 mt-2 py-4" href="main/agenda.html">This Week's Agenda</a>
+                  </div>
+                  <div class="column is-flex is-justify-content-center is-align-items-center">
+                    <a class="button button-blurred w100 mt-2 py-4" href="main/resources.html">Resources</a>
+                  </div>
+                </div>
+            </div>
+        </div> 
     </div>
 </body>
 </html>
