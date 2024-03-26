@@ -1,0 +1,44 @@
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1636652968964-22026624a69a?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
+span.title {
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.275);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.navbar-item, .navbar-dropdown, .navbar-link {
+    color: white;
+}
+.navbar-dropdown {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.navbar-li {
+    color: white !important;
+    background-color:rgba(0, 0, 0, 0) !important;
+}
+.navbar-link::after {
+    border-color: white !important;
+}
+.navbar-item:hover, .navbar-link:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-no-hover:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+.navbar-menu.is-active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
