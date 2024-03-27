@@ -15,13 +15,20 @@
     <style>
       body {
         background-image: url('https://images.unsplash.com/photo-1636652968964-22026624a69a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-color: rgb(40, 40, 40);
+      }
+      html {
+        scroll-behavior: smooth;
+        background-color: rgb(40, 40, 40);
       }
     </style>
 </head>
 <body>
   <!-- Navbar inclusion -->
-  <div id="navbar-container"></div><script>$("#navbar-container").load("includes/navbar.html");</script>
-  <script src="assets/js/navbarsupp.js"></script>
+  <div id="navbar-container"></div>
+  <script>
+    $("#navbar-container").load("includes/navbar.html");
+  </script>
   <!-- Main page -->
   <div class="container is-flex is-justify-content-center is-align-items-center">
     <div class="hero is-blurred-light central-hero is-size-1-mobile is-hero-hover">

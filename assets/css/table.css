@@ -12,16 +12,27 @@
     color: rgb(209, 209, 209) !important;
 }
 
-.table thead tr th {
+.table tr {
+    transition: background-color 0.25s ease;
+}
+/* radii for table row hover */
+.table thead tr th:first-child {
     border-top-left-radius: 1em;
+}
+.table thead tr th:last-child {
     border-top-right-radius: 1em;
 }
-.table tbody:last-child tr:last-child td {
+.table tbody:last-child tr:last-child td:first-child {
     border-bottom-left-radius: 1em;
+}
+.table tbody:last-child tr:last-child td:last-child {
     border-bottom-right-radius: 1em;
 }
 .table tr:hover {
-    background-color: rgba(255, 255, 255, 0.134)
+    background-color: rgba(45, 189, 255, 0.101)
+}
+.table thead tr:first-child:hover {
+    background-color: rgba(255, 255, 255, 0.084)
 }
 
 a {

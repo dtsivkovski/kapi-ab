@@ -1,0 +1,40 @@
+{
+    "contacts": [
+        {
+            "name": "Natalie Oliva",
+            "position": "Director of Recruitment"
+        },
+        {
+            "name": "Jordan Stinnett",
+            "position": "Vice President of Recruitment"
+        },
+        {
+            "name": "Isabelle Killough",
+            "position": "Vice President of Recruitment"
+        },
+        {
+            "name": "Mariana Juarez",
+            "position": "President"
+        },
+        {
+            "name": "Isabella Mahar",
+            "position": "Vice President"
+        },
+        {
+            "name": "Camille DeWilde",
+            "position": "Secretary"
+        },
+        {
+            "name": "Natalie Oliva",
+            "position": "Director of Recruitment"
+        },
+        {
+            "name": "Eric Hall",
+            "position": "Treasurer"
+        },
+        {
+            "name": "Amala Rajagopal",
+            "position": "Director of DEI"
+        }
+    ]
+}

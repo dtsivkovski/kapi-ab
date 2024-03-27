@@ -24,11 +24,7 @@
         <div id="navbar-container"></div><script>
             // load navbar and replace path to icon
             $("#navbar-container").load("../includes/navbar.html");
-            $(document).ready(function() {
-                $("#nav-icon").attr("src", "../assets/favicon.ico");
-            });
         </script>
-        <script src="../assets/js/navbarsupp.js"></script>
     <!-- Main page -->
     <div class="container is-flex is-justify-content-center is-align-items-center">
         <div class="hero is-blurred-light central-hero is-size-1-mobile is-hero-hover">
@@ -36,7 +32,7 @@
                 <div class="container">
                     <h1 class="title has-text-white has-text-centered font-georgia">Resources</h1>
                 </div>
-                <div class="container is-flex is-justify-content-center is-align-items-center mt-4">
+                <div class="container is-flex is-justify-content-center is-align-items-center my-4">
                     <table class="table">
                         <thead>
                             <tr>
@@ -48,9 +44,25 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="container is-flex is-justify-content-center is-align-items-center mt-4">
+                    <h1 class="title has-text-white has-text-centered font-georgia mt-4">Important Contacts</h1>
+                </div>
+                <div class="container is-flex is-justify-content-center is-align-items-center mt-4">
+                    <table class="table w100">
+                        <thead>
+                            <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contactsBody">
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
     <script src="../assets/js/resources-table.js"></script>
+    <script src="../assets/js/contacts-table.js"></script>
 
 </body>

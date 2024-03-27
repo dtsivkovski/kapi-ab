@@ -8,7 +8,7 @@
             <span class="title">ΚΑΠ - ΑΒ</span>
             </a>
         
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a role="button" id="main-nav-burger" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -58,4 +58,24 @@
             </div>
         </div>
     </nav>
+    <script>
+        // enables the navbar burger to toggle the navbar menu just for this one navbar burger
+        const navbarBurger = document.querySelector('#main-nav-burger'); 
+
+        // Check if the navbar burger exists
+        if (navbarBurger) {
+            // Add a click event on it
+            navbarBurger.addEventListener('click', () => {
+                console.log('click');
+
+                // Get the target from the "data-target" attribute
+                const target = navbarBurger.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                navbarBurger.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+            });
+        }
+    </script>
 </div>
