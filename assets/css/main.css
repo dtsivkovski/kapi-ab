@@ -1,4 +1,12 @@
 
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
+
 .minh-100vh {
     min-height: 100vh;
 }
@@ -20,4 +28,10 @@
 
 .font-georgia {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-adapt {
+        width: 100vw;
+    }
 }

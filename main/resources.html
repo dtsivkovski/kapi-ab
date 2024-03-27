@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resources - ΑΒ Hub</title>
+    <link rel="icon" href="../assets/favicon.ico" type="image/icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/navbarsupp.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/table.css">
+    <style>
+      body {
+        background-image: url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      }
+    </style>
+</head>
+<body>
+    <!-- Navbar inclusion -->
+        <div id="navbar-container"></div><script>
+            // load navbar and replace path to icon
+            $("#navbar-container").load("../includes/navbar.html");
+            $(document).ready(function() {
+                $("#nav-icon").attr("src", "../assets/favicon.ico");
+            });
+        </script>
+        <script src="../assets/js/navbarsupp.js"></script>
+    <!-- Main page -->
+    <div class="container is-flex is-justify-content-center is-align-items-center">
+        <div class="hero is-blurred-light central-hero is-size-1-mobile is-hero-hover">
+            <div class="hero-body hero-adapt">
+                <div class="container">
+                    <h1 class="title has-text-white has-text-centered font-georgia">Resources</h1>
+                </div>
+                <div class="container is-flex is-justify-content-center is-align-items-center mt-4">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                            <th>Resource</th>
+                            <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resourcesBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/resources-table.js"></script>
+
+</body>

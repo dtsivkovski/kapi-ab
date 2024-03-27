@@ -1,12 +1,5 @@
 
-body {
-    background-image: url('https://images.unsplash.com/photo-1636652968964-22026624a69a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100vh;
-}
+
 span.title {
     font-size: 1.5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -56,7 +49,6 @@ span.title {
 .central-hero {
     margin-top: 4em;
     border-radius: 1em;
-    transition: background-color 3s ease, border-radius 3s ease, backdrop-filter 3s ease;
 }
 /* Media for central hero, eliminate top margin if too small of a screen */
 @media screen and (max-width: 768px) {

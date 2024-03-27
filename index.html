@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ΚΑΠ - ΑΒ</title>
+    <title>ΚΑΠ - ΑΒ Hub</title>
     <link rel="icon" href="assets/favicon.ico" type="image/icon">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,87 +9,35 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
     >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/navbarsupp.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+      body {
+        background-image: url('https://images.unsplash.com/photo-1636652968964-22026624a69a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      }
+    </style>
 </head>
 <body>
-    <!-- Navbar element with bulma -->
-    <div class="navholder">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="/">
-            <img src="assets/favicon.ico" width="28" height="28" class="mr-3">
-            <span class="title">ΚΑΠ - ΑΒ</span>
-          </a>
-      
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+  <!-- Navbar inclusion -->
+  <div id="navbar-container"></div><script>$("#navbar-container").load("includes/navbar.html");</script>
+  <!-- Main page -->
+  <div class="container is-flex is-justify-content-center is-align-items-center">
+    <div class="hero is-blurred-light central-hero is-size-1-mobile is-hero-hover">
+      <div class="hero-body hero-adapt">
+        <div class="container">
+            <h1 class="title has-text-white has-text-centered font-georgia">Welcome to the ΚΑΠ Alpha Beta Hub!</h1>
         </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item" href="main/resources.html">
-              Resources
-            </a>
-      
-            <a class="navbar-item" href="main/minutes.html">
-              Minutes
-            </a>
-
-            <a class="navbar-item" href="main/agenda.html">
-              Agenda
-            </a>
-      
-            <!-- <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                More
-              </a>
-      
-              <div class="navbar-dropdown">
-                <a class="navbar-item navbar-li">
-                  About
-                </a>
-              </div>
-            </div>
-            -->
+        <div class="columns mt-4">
+          <div class="column is-flex is-justify-content-center is-align-items-center">
+            <a class="button button-blurred w100 mt-2 py-4" href="/main/agenda.html">This Week's Agenda</a>
           </div>
-      
-          <div class="navbar-end">
-            <!-- <div class="navbar-item nav-no-hover">
-              <div class="buttons">
-                <a class="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
-                </a>
-              </div>
-            </div> -->
+          <div class="column is-flex is-justify-content-center is-align-items-center">
+            <a class="button button-blurred w100 mt-2 py-4" href="/main/resources.html">Resources</a>
           </div>
         </div>
-      </nav>
-    </div>
-      <script src="assets/js/navbarsupp.js"></script>
-    <div class="container is-flex is-justify-content-center is-align-items-center">
-        <div class="hero is-blurred-light central-hero is-size-1-mobile is-hero-hover">
-            <div class="hero-body">
-                <div class="container">
-                    <h1 class="title has-text-white has-text-centered font-georgia">Welcome to the ΚΑΠ Alpha Beta Hub!</h1>
-                </div>
-                <div class="columns mt-4">
-                  <div class="column is-flex is-justify-content-center is-align-items-center">
-                    <a class="button button-blurred w100 mt-2 py-4" href="main/agenda.html">This Week's Agenda</a>
-                  </div>
-                  <div class="column is-flex is-justify-content-center is-align-items-center">
-                    <a class="button button-blurred w100 mt-2 py-4" href="main/resources.html">Resources</a>
-                  </div>
-                </div>
-            </div>
-        </div> 
-    </div>
+      </div>
+    </div> 
+  </div>
 </body>
 </html>

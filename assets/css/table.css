@@ -1,0 +1,46 @@
+.table {
+    border-radius: 1em;
+    transition: border-radius 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.table th {
+    color: white !important;
+}
+
+.table td {
+    color: rgb(209, 209, 209) !important;
+}
+
+.table thead tr th {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.table tbody:last-child tr:last-child td {
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+.table tr:hover {
+    background-color: rgba(255, 255, 255, 0.134)
+}
+
+a {
+    color: rgb(99, 180, 255);
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 320px) {
+    .table {
+        font-size: 0.4em;
+        border-radius: 0em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .table {
+        font-size: 0.4em;
+    }
+}
