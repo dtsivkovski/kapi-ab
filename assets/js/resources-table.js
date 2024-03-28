@@ -12,11 +12,18 @@ fetch('../data/resources.json')
             const resourceLinkCell = row.insertCell();
             const descriptionCell = row.insertCell();
 
-            const aElement = document.createElement('a');
-            aElement.textContent = resource.resource;
-            aElement.href = resource.link;
+            // do not display the link if it is empty
+            if (resource.link == "" || resource.link == null) {
+                resourceLinkCell.textContent = resource.resource;
+            }
+            else {
+                const aElement = document.createElement('a');
+                aElement.textContent = resource.resource;
+                aElement.href = resource.link;
+                aElement.target = "_blank";
+                resourceLinkCell.appendChild(aElement);
+            }
 
-            resourceLinkCell.appendChild(aElement);
             descriptionCell.textContent = resource.description;
         });
     })

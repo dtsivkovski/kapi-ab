@@ -1,0 +1,21 @@
+{ 
+    "minutes" : [
+        {
+            "title": "Meeting 1",
+            "description": "Intros, DEI Training, Pledge Manual, Professional Workshop, Pledge Board",
+            "url": "https://docs.google.com/document/u/0/d/1M9QxPTn2hHm_o3FekBIcSweKFfi_omGisdM0HHrD61g/edit",
+            "date": "2024-03-11"
+        },
+        {
+            "title": "Meeting 2",
+            "description": "Dues, Professional Reminders, Potential Bigs, Elections for Pledge Board",
+            "url": "https://docs.google.com/document/u/0/d/1R3wzqxhz9tGrO5ayYFU5hxhsfqHANY0RiWLJPRSZCRs/edit",
+            "date": "2024-03-25"
+        }, 
+        {
+            "title": "Meeting 3",
+            "description": "Purpose Quiz, Professional Workshop, Legal Terms",
+            "date": "2024-04-01"
+        }
+    ]
+}
