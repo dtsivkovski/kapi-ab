@@ -1,5 +1,6 @@
 .table {
     border-radius: 1em;
+    -webkit-transition: border-radius 0.5s ease;
     transition: border-radius 0.5s ease;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -13,6 +14,7 @@
 }
 
 .table tr {
+    -webkit-transition: background-color 0.25s ease;
     transition: background-color 0.25s ease;
 }
 /* radii for table row hover */
@@ -37,6 +39,7 @@
 
 a {
     color: rgb(99, 180, 255);
+    -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
 a:hover {
