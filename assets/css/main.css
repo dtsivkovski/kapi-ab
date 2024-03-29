@@ -19,13 +19,30 @@ body {
     background-color: rgba(0, 0, 0, 0.275);
     color: white;
     border: 0px;
-    border-radius: 0.5em;
+    border-radius: 1em;
     -webkit-backdrop-filter: blur(10px);
     -webkit-background-color: rgba(0, 0, 0, 0.275);
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.353);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    -webkit-transition: transform 0.2s ease, background-color 0.2s ease;
 }
 .button-blurred:hover {
     background-color: rgba(0, 0, 0, 0.75);
     -webkit-background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.353);
+    transform: translate(0px, 2px);
+}
+.blurred-red {
+    background-color: rgba(122, 10, 10, 0.497)
+}
+.blurred-red:hover {
+    background-color: rgba(96, 10, 10, 0.75)
+}
+.blurred-green {
+    background-color: rgba(10, 122, 10, 0.497)
+}
+.blurred-green:hover {
+    background-color: rgba(10, 96, 10, 0.75)
 }
 
 .font-georgia {
@@ -36,4 +53,27 @@ body {
     .hero-adapt {
         width: 100vw;
     }
+}
+
+.textarea {
+    /* change color of placeholder text */
+    color: white;
+    text-align: center;
+    border: 0px;
+    border-radius: 1em;
+    transition: background-color 0.2s ease;
+    -webkit-transition: background-color 0.2s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Webkit support */
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 150px;
+    height: 150px;
+}
+
+.textarea::placeholder {
+    color: rgb(213, 213, 213);
+    text-align: center;
+}
+.textarea:focus {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.353);
 }
