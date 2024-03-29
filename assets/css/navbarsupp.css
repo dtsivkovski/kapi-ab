@@ -64,3 +64,15 @@ span.title {
 .navbar-burger span {
     background-color: white;
 }
+
+.textarea {
+    /* change color of placeholder text */
+    color: white;
+    text-align: center;
+    border: 0px;
+    border-radius: 1em;
+}
+.textarea::placeholder {
+    color: rgb(213, 213, 213);
+    text-align: center;
+}
