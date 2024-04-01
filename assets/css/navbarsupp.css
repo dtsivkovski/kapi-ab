@@ -4,28 +4,38 @@ span.title {
     color: white;
 }
 .navbar {
-    background-color: rgba(0, 0, 0, 0.275);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Webkit support */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); /* Webkit support */
+    margin-right: 1em;
+    margin-left: 1em;
+    border-radius: 1em;
+}
+.navholder {
+    padding-top: 1em;
 }
 .navbar-item, .navbar-dropdown, .navbar-link {
     color: white;
+    border-radius: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 .is-blurred-light {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* Webkit support */
-    background-color: rgba(0, 0, 0, 0.275);
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
 }
 .is-blurred-dark {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* Webkit support */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
 }
 .navbar-dropdown {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* Webkit support */
     border-bottom-left-radius: 5px;
@@ -42,7 +52,7 @@ span.title {
     transition: background-color 0.5s ease;
     -webkit-transition: background-color 0.5s ease;
 }
-.navbar-item:hover, .navbar-link:hover {
+.navbar-item:hover, .navbar-link:hover, .navbar-burger:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 .nav-no-hover:hover {
@@ -62,6 +72,14 @@ span.title {
         margin-top: 0;
         border-radius: 0em;
         min-height: 100vh;
+    }
+    .navbar {
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 0em;
+    }
+    .navholder {
+        padding-top: 0;
     }
 }
 
