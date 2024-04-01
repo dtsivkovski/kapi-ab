@@ -16,7 +16,7 @@ body {
 
 .button-blurred {
     backdrop-filter: blur(10px);
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(43, 43, 43, 0.275);
     color: white;
     border: 0px;
     border-radius: 1.5em;
@@ -51,6 +51,7 @@ body {
 @media screen and (max-width: 768px) {
     .hero-adapt {
         width: 100vw;
+        border-radius: 0;
     }
 }
 
