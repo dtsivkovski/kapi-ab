@@ -9,14 +9,14 @@ span.title {
     -webkit-backdrop-filter: blur(15px); /* Webkit support */
     margin-right: 1em;
     margin-left: 1em;
-    border-radius: 1em;
+    border-radius: 2em;
 }
 .navholder {
     padding-top: 1em;
 }
 .navbar-item, .navbar-dropdown, .navbar-link {
     color: white;
-    border-radius: 1em;
+    border-radius: 1.5em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     margin-left: 0.5em;
