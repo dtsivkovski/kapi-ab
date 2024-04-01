@@ -49,8 +49,8 @@ span.title {
     border-color: white !important;
 }
 .navbar-item, .navbar-link {
-    transition: background-color 0.5s ease;
-    -webkit-transition: background-color 0.5s ease;
+    transition: background-color 0.4s ease;
+    -webkit-transition: background-color 0.4s ease;
 }
 .navbar-item:hover, .navbar-link:hover, .navbar-burger:hover {
     background-color: rgba(0, 0, 0, 0.5);
