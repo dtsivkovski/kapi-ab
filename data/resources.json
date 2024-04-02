@@ -1,6 +1,11 @@
 {
     "resources": [
         {
+            "resource": "Resume and LinkedIn Presentation",
+            "description": "The presentation from the resume and LinkedIn workshop led by Carson!",
+            "link": "https://chapman0-my.sharepoint.com/:p:/g/personal/tsivkovski_chapman_edu/EfV164pKYOdCpJ7sg9BtWswB3sBRYkwhcmF6eaVrybaY6Q?e=HH9uGm"
+        },
+        {
             "resource": "Official AB Linktree",
             "description": "The official linktree posted by the KAPi recruitment team.",
             "link": "https://linktr.ee/kapirecruitment"
@@ -14,11 +19,6 @@
             "resource": "Legal Terminology Quizlet",
             "description": "All 70 legal terms - memorize by April 22nd!",
             "link": "https://quizlet.com/892972081/legal-terminology-overview-flash-cards/"
-        },
-        {
-            "resource": "Resume and LinkedIn Presentation",
-            "description": "The presentation from the resume and LinkedIn workshop led by Carson!",
-            "link": "https://chapman0-my.sharepoint.com/:p:/g/personal/tsivkovski_chapman_edu/EfV164pKYOdCpJ7sg9BtWswB3sBRYkwhcmF6eaVrybaY6Q?e=HH9uGm"
         }
     ]
 }
