@@ -75,6 +75,8 @@ span.title {
 .central-hero {
     margin-top: 4em;
     border-radius: 4em;
+}
+.hover-main {
     transition: transform 0.4s ease;
     transform: scale(1);
 }
@@ -98,7 +100,7 @@ span.title {
     .navbar-menu.is-active {
         border-radius: 2em;
     }
-    .central-hero:hover {
+    .hover-main:hover {
         transform: scale(1.1);
     }
     .navbar:hover {
