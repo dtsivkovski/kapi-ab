@@ -75,35 +75,3 @@ body {
 .textarea:focus {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.353);
 }
-
-.formrow-complete {
-    color: rgb(118, 118, 118);
-    text-decoration: line-through;
-    background-color: rgba(68, 68, 68, 0.497)
-}
-.formrow-complete:hover {
-    background-color: rgba(68, 68, 68, 0.75) !important;
-}
-.formrow-complete td {
-    color: rgb(118, 118, 118);
-}
-.formrow-overdue {
-    color: rgb(255, 45, 45);
-    text-decoration: underline;
-    background-color: rgba(137, 10, 10, 0.497)
-}
-.formrow-overdue:hover {
-    background-color: rgba(137, 10, 10, 0.75) !important;
-}
-.formrow-overdue td {
-    color: rgb(255, 45, 45);
-}
-
-.has-text-red {
-    color: rgb(255, 61, 61);
-}
-
-input.checkbox {
-    width: 1.5em;
-    height: 1.5em;
-}

@@ -2,21 +2,27 @@
     "forms" : [
         {
             "title" : "KAPi Formal RSVP",
-            "dueDate" : "2024-04-08",
-            "description" : "RSVP by 11:59pm this day!",
+            "dueDate" : "2024-04-08 23:59",
+            "description" : "Please RSVP to ensure you're going!",
             "url" : "https://form.jotform.com/240916076239157"
         },
         {
             "title" : "KAPi Formal Tardiness Form",
-            "dueDate" : "2024-04-12",
-            "description" : "Fill out if you know you will be late to formal. Due by 11:59pm this day.",
+            "dueDate" : "2024-04-12 23:59",
+            "description" : "Fill out if you know you will be late to formal. ",
             "url" : "https://docs.google.com/forms/d/e/1FAIpQLSeGy3hVI9_snWQXzxfqvczZfCJrR42uZ_6s6WN94XkvNigThg/viewform"
         },
         {
             "title" : "KAPi Formal Activity Form",
-            "dueDate" : "2024-04-12",
+            "dueDate" : "2024-04-12 23:59",
             "description" : "Fill this out before the formal. If you are bringing a +1, they must fill this out too.",
             "url" : "https://web.chapman.edu/ActivityWaiver/Default.aspx?rpage=Waiver.aspx?event=20065"
+        },
+        {
+            "title": "Big-Little Form",
+            "dueDate": "2024-04-12 19:00",
+            "description": "Fill out this form to be matched with a big or little! (not open yet)",
+            "url": ""
         }
     ]
 }

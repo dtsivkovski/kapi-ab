@@ -80,10 +80,10 @@ fetch('../data/forms.json')
 
             // process the date
             const date = new Date(form.dueDate);
-            date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
             // output the date as Month Day, Year
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            formDateCell.textContent = date.toLocaleDateString('en-US', options);
+            const dateOptions = { month: 'long', day: 'numeric', time: 'numeric', timeZone: 'PST'};
+            const timeOptions = { hour: 'numeric', minute: '2-digit', timeZone: 'PST'};
+            formDateCell.textContent = date.toLocaleString('en-US', dateOptions) + " by " + date.toLocaleTimeString('en-US', timeOptions);
 
             // check if the form is completed
             if (completedForms.includes(form.title)) {
