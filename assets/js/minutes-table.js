@@ -29,10 +29,11 @@ fetch('../data/minutes.json')
             descriptionCell.textContent = minute.description;
 
             // process the date
-            const date = new Date(minute.date);
+            const date = new Date(minute.date + "T00:00");
+
             // output the date as Month Day, Year
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            minuteDateCell.textContent = date.toLocaleDateString('en-US', options);
+            const options = { month: 'long', day: 'numeric', time: 'numeric', timeZone: 'PST'};
+            minuteDateCell.textContent = date.toLocaleString('en-US', options);
         });
     })
     .catch(error => console.error('Error:', error));
